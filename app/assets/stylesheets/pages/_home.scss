@@ -4,7 +4,7 @@
   padding: 200px 0;
 
   h1 {
-    font-size: 140px;
+    font-size: 100px;
   }
 
   header {
@@ -14,12 +14,11 @@
 
 .navbar {
   .btn {
-    font-size: 25px;
+    font-size: 18px;
     color: white;
-    -webkit-text-stroke: 0.5px white;
 
     &:hover {
-      color: #24B84D;
+      color: #28793F;
     }
   }
 }
