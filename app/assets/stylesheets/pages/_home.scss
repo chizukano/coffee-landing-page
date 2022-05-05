@@ -1,9 +1,25 @@
 .banner {
   background-size: cover;
   background-position: center;
-  padding: 400px 0;
+  padding: 200px 0;
 
   h1 {
-    font-size: 70px;
+    font-size: 140px;
+  }
+
+  header {
+    padding-bottom: 300px;
+  }
+}
+
+.navbar {
+  .btn {
+    font-size: 25px;
+    color: #2D5337;
+    -webkit-text-stroke: 0.5px white;
+
+    &:hover {
+      color: white;
+    }
   }
 }
