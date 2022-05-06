@@ -1,15 +1,15 @@
 <div class="container m-5 p-5">
   <h2 class="text-white">Contact</h2>
-  <div class="container">
-  <%= form_for @contact do |f| %>
-    <div class="col-md-8">
-      <%= f.text_field  :name, required: true, class: "contact-form-text-area", placeholder: "Full Name"%>
-      <%= f.text_field :email, required: true, class: "contact-form-text-area", placeholder: "E-mail Address" %>
-      <%= f.text_area :message, rows: 8, cols: 40, required: true, class: "contact-form-text-area",
-            placeholder: "Write your request here."%>
-      <br>
-      <%= f.submit 'Send', class: 'btn btn-primary' %>
-    </div>
+  <div class="col-10">
+  <%= simple_form_for @contact, class: "mb-3" do |f| %>
+    <%= f.input :name, label: false, placeholder: "Full Name" %>
+    <br>
+    <%= f.input :email, label: false, placeholder: "E-mail Address" %>
+    <br>
+    <%= f.input :message, label: false, as: :text,
+          placeholder: "Write your request here"%>
+    <br>
+    <%= f.button :submit, class: 'btn btn-primary w-100' %>
   <% end %>
 </div>
 </div>
